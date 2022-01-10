@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );
+}
+.calculator{
+    background-color: black;
+    width: 401.5px;
+    height: 620px;
+    margin: 10rem auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.result{
+    height: 100px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    overflow-y: hidden;
+}
+
+.button-section{
+    display: flex;
+}
+
+.numbers{
+    width: 300px;
+    height: 520px;
+    display: flex;
+    flex-wrap: wrap;        
+}
+.numbers button{
+    background-color: #d8d9db;
+    width: 100px;
+    height: 104px;
+    border: .5px solid black;
+    cursor: pointer;
+    font-size: 36px;
+}
+.numbers button:first-child{
+    width: 200px;
+}
+.numbers button:last-child{
+    width: 100%;
+}
+.numbers button:hover{
+    background-color: #ebebeb;
+}
+.numbers button:active{
+    background-color: #d8d9db;
+}
+
+.operations{
+    height: 520px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+}
+.operations button{
+    background-color: #df974c;
+    width: 100px;
+    height: 104px;
+    border: .5px solid black;
+    cursor: pointer;
+    color: white;
+    font-size: 42px;
+}
+.operations button:hover{
+    background-color: #dfb07e;
+}
+.operations button:active{
+    background-color: #df974c;
+}
+
+
