@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+section{
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+article + article{
+    margin: 3rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid #c5c5c5;
+}
