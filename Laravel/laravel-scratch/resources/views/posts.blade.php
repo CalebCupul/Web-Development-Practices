@@ -8,6 +8,8 @@
                 </a>
                 
             </h1>
+            <a href="#">{{ $post->category->name }}</a>
+
             <p>{{ $post->excerpt }}</p>
         </article>
 
