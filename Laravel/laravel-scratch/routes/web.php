@@ -22,14 +22,12 @@ Route::get('/', function () {
     return view('posts', [
         'posts' => Post::all()
     ]);
-
-    
 });
 
-Route::get('posts/{post}', function ($slug) {
+Route::get('posts/{post:slug}', function (Post $post) {
 
     return view('post', [
-        'post' => Post::findOrFail($slug)
+        'post' => $post
     ]);
 
     // Restricciones (expresiones regulares)
