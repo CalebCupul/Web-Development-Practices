@@ -11,7 +11,7 @@
     
     <section>
         <h1>{{ $post->title }}</h1>
-        <a href="#"> {{ $post->category->name }}</a>
+        By <a href="#">{{ $post->author->username }}</a> in <a href="#"> {{ $post->category->name }}</a>
         <p>{!! $post->body !!}</p>
         <a href="/">Go back</a>
     </section>
