@@ -19,11 +19,11 @@ return new class extends Migration
             $table->string('imagen');
             $table->string('domicilio');
             $table->string('comprobante');
-            $table->number('telefono');
+            $table->string('telefono');
             $table->string('correo')->unique();
             $table->string('rol');
             $table->string('password');
-            // $table->string('libro')
+            $table->string('libros-activos')->default('0');
             
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
